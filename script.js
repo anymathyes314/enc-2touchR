@@ -2,11 +2,15 @@
 //cipher
 
 function encryption{
-  ver nowcode = "";
-  ver text = document.getElementByid(original);
-  ver len = original.length;
-  ver len = len - 1;
-  for ( ver i = 0; i < len; i++ ) {
-    text.charCodeAt(i);
+  const str = 'ABC';
+  const encoder = new TextEncoder();
+  const byteArray = encoder.encode(str);
+
+  // バイト値を取得
+  const asciiValues = [];
+  for (let i = 0; i < byteArray.length; i++) {
+    asciiValues.push(byteArray[i]);
   }
+
+  console.log(asciiValues);
 }
