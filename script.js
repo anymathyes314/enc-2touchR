@@ -1,7 +1,7 @@
 //original
 //cipher
 
-function encryption{
+function encryption() {
   const str = 'ABC';
   const encoder = new TextEncoder();
   const byteArray = encoder.encode(str);
