@@ -2,12 +2,9 @@
 //cipher
 
 function encryption() {
-  const str = 'ABC';
-  const values = [];
-
-  for (let i = 0; i < byteArray.length; i++) {
-    const values = values + str.charCodeAt(i);
-  }
-
-  console.log(values);
+    const char = 'ABC';
+    for (let i = 0; i < char.length; i++) {
+        const ascii = ascii + char.charCodeAt(i);
+    }  
+    console.log(ascii); // 出力: 65
 }
