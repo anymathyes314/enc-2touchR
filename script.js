@@ -2,10 +2,14 @@
 //cipher
 
 function encryption() {
-    const char = 'ABC';
-    const ascii = '';
-    for (let i = 0; i < char.length; i++) {
-        const ascii = char.charCodeAt(i);
-    }  
-    console.log(ascii); // 出力: 65
+    const str = document.ElementById(original);
+    const byteArray = new TextEncoder().encode(str);
+
+    // バイト値を取得
+    const asciiValues = [];
+    for (let i = 0; i < byteArray.length; i++) {
+    	asciiValues.push(byteArray[i]);
+	}
+
+	console.log(asciiValues); // 出力: [65, 66, 67]
 }
